@@ -1,0 +1,105 @@
+# ===== Python =====
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+pip-wheel-metadata/
+.installed.cfg
+MANIFEST
+
+# Virtual environments
+.venv/
+venv/
+env/
+.python-version
+
+# Testing / coverage
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+coverage.xml
+*.cover
+
+# Type checking
+.mypy_cache/
+.pyre/
+.pytype/
+.ruff_cache/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# ===== ML / Data artifacts =====
+# Model weights, checkpoints, embeddings - must not be committed
+*.pt
+*.pth
+*.ckpt
+*.bin
+*.safetensors
+*.gguf
+*.onnx
+*.h5
+*.npy
+*.npz
+*.pkl
+*.pickle
+
+#Training logs
+runs/
+wandb/
+mlruns/
+lightning_logs/
+events.out.tfevents.*
+
+# Data (public dataset goes to data/ but binaries stay local)
+data/raw/
+data/external/
+*.csv.gz
+*.parquet
+*.arrow
+*.zst
+
+# ===== Environment / Secrets =====
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+*.p12
+credentials*
+secrets*
+api_keys*
+
+# ===== IDE / Editor =====
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.fleet/
+.cursor/
+
+# ===== OS =====
+.DS_Store
+.DS_Store?
+._*
+Thumbs.db
+desktop.ini
+ehthumbs.db
+
+# ===== Agent internal =====
+.gjc/
+.aside/
+
+# ===== Build / misc =====
+*.log
+logs/
+*.pid
